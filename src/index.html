@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="shortcut icon"
+      href="../public/image/logo/logo 1.png"
+      type="image/x-icon"
+    />
+    <title>Perpus JP1</title>
+
+    <!-- Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="scroll-smooth relative">
+    <!-- Header Start -->
+    <header
+      class="w-full py-4 md:py-2 fixed top-0 left-0 bg-white z-10 shadow-xl"
+    >
+      <nav class="container mx-auto px-4 flex justify-between items-center">
+        <!-- Content Left -->
+        <div class="md:py-3 text-3xl font-bold text-lime-500 capitalize">
+          <a href="#home" class=""
+            ><img src="../public/image/logo/logo 1.png" alt=""
+          /></a>
+        </div>
+
+        <!-- Content Center -->
+        <div class="">
+          <ul class="hidden md:flex items-center gap-2">
+            <li class="group px-3 py-2">
+              <a
+                href="#home"
+                class="font-normal text-sm lg:text-[1.1rem] text-slate-800 group-hover:text-blue-500"
+                >Beranda</a
+              >
+            </li>
+            <li class="group px-3 py-2">
+              <a
+                href="#tentang-kami"
+                class="font-normal text-sm lg:text-[1.1rem] text-slate-800 group-hover:text-blue-500"
+                >Tentang Kami</a
+              >
+            </li>
+            <li class="group px-3 py-2">
+              <a
+                href="daftarBuku.html"
+                class="font-normal text-sm lg:text-[1.1rem] text-slate-800 group-hover:text-blue-500"
+                >Kategori Buku</a
+              >
+            </li>
+            <li class="group px-3 py-2">
+              <a
+                href="#faq"
+                class="font-normal text-sm lg:text-[1.1rem] text-slate-800 group-hover:text-blue-500"
+                >FAQ</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Content Right -->
+        <div class="hidden md:block md:space-x-1">
+          <a
+            href=""
+            class="px-8 py-3 border border-blue-500 text-blueborder-blue-500 bg-white rounded-full"
+            >Register</a
+          >
+          <a href="" class="px-8 py-3 bg-blue-500 border-blue-500 text-white rounded-full">Login</a>
+        </div>
+
+        <!-- Hamburger Menu -->
+
+        <div id="navMobile" class="hidden transition-all duration-300">
+          <ul
+            class="p-5 absolute h-56 right-7 left-24 top-20 inset-0 bg-white capitalize z-50 shadow-lg space-y-2"
+          >
+            <li>
+              <a
+                href="#home"
+                class="hover:text-blue-500 text-[16px] transition-all duration-300"
+                >Beranda</a
+              >
+            </li>
+            <li>
+              <a
+                href="#tentang-kami"
+                class="hover:text-blue-500 text-[16px] transition-all duration-300"
+                >Tentang Kami</a
+              >
+            </li>
+            <li>
+              <a
+                href="daftarBuku.html"
+                class="hover:text-blue-500 text-[16px] transition-all duration-300"
+                >Kategori Buku</a
+              >
+            </li>
+            <li>
+              <a
+                href="#faq"
+                class="hover:text-blue-500 text-[16px] transition-all duration-300"
+                >FAQ</a
+              >
+            </li>
+
+            <div class="flex gap-2 mt-4">
+              <a
+                href=""
+                class="px-4 py-2 bg-white text-main border border-main rounded-full text-sm"
+                >Register</a
+              >
+              <a
+                href=""
+                class="px-4 py-2 bg-main text-white rounded-full text-sm"
+                >Login</a
+              >
+            </div>
+          </ul>
+        </div>
+
+        <div
+          id="menu"
+          class="md:hidden cursor-pointer transition-all duration-300 z-50"
+        >
+          <i class="fa-solid fa-bars text-2xl"></i>
+        </div>
+      </nav>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Section Start -->
+    <section id="home" class="pt-40 md:pt-32 pb-16 xl:pt-52">
+      <div class="w-full px-4">
+        <div class="container mx-auto">
+          <div class="flex flex-col md:flex-row justify-between">
+            <!-- Content Left Start -->
+            <div
+              class="w-full md:w-1/2 order-2 md:order-1 pt-4 text-center md:text-start"
+            >
+              <h1
+                class="text-2xl md:text-5xl font-bold text-slate-800 md:leading-snug"
+              >
+                Perpustakaan Digital SMK Jakarta Pusat 1
+              </h1>
+              <p
+                class="text-grey font-normal text-sm md:text-lg mt-8 mb-10 md:mb-8 md:my-10"
+              >
+                Cara terbaik untuk meningkatkan kualitas karakter, kompetensi
+                dan kesejahteraan hidup seseorang, adalah dengan menanamkan
+                budaya literasi
+              </p>
+
+              <a
+                href=""
+                class="px-8 py-4 text-white bg-blue-500 text-sm rounded-full"
+                >Explore Sekarang</a
+              >
+            </div>
+            <!-- Content Left End -->
+
+            <!-- Content Right Start -->
+            <div class="w-full md:w-1/2 order-1 md:order-2 md:-mt-8">
+              <div class="">
+                <img
+                  src="../public/image/content 1.png"
+                  alt=""
+                  class="w-full h-full"
+                />
+              </div>
+            </div>
+            <!-- Content Right End -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Data Buku Section Start -->
+    <section id="data-buku" class="pt-14 pb-20">
+      <div class="w-full px-4">
+        <div class="container mx-auto">
+          <!-- Header Start -->
+          <!-- <div class="space-y-3 mb-8">
+            <h1 class="font-bold text-xl text-center md:text-3xl">Data Buku</h1>
+            <p class="text-grey text-sm md:text-lg text-center">
+              berikut buku buku yang tersedia yang dapat kamu pinjam
+            </p>
+          </div> -->
+          <!-- Header End -->
+
+          <!-- Content Buku Start -->
+          <div
+            class=""
+          >
+            <!-- Card 1 Start -->
+            <div class="">
+              <div class="">
+                <div
+                  class=""
+                >
+                  <div
+                    class=""
+                  >
+                    <div
+                      class=""
+                    >
+                      <!-- <i class="fa-regular fa-eye text-white text-5xl md:text-6xl"></i> -->
+                      <p class="">
+                      </p>
+                    </div>
+                  </div>
+                  <img
+                    src=""
+                    class=""
+                    alt=""
+                  />
+                </div>
+
+                <!-- Title Start -->
+                <div class="">
+                  <div class="">
+                    <h1 class=""></h1>
+                    <p>
+                      <!-- <i class="fa-solid fa-star text-yellow-500 pe-2"></i> -->
+                      <span></span>
+                    </p>
+                  </div>
+
+                  <p class="">
+                    <!-- Buku yang tepat buat kamu yang ingin tahu letak geografis
+                    dunia -->
+                  </p>
+                </div>
+                <!-- Title End -->
+              </div>
+            </div>
+            <!-- Card 1 End -->
+          </div>
+          <!-- Content Buku End -->
+
+          <div class="">
+            <a
+              href=""
+              class=""
+            >
+              <!-- <i class="fa-solid fa-arrow-right"></i> -->
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Data Buku Section End -->
+
+    <!-- Tentang Kami Section Start -->
+    <section id="tentang-kami" class="pt-20 pb-24">
+      <div class="">
+        <div class="">
+          <div class="">
+            <!-- Content Left Start -->
+            <div class="">
+              <p class="">
+                <!-- Tentang Kami -->
+              </p>
+              <h1 class="">
+                <!-- Membantu anda untuk meminjam buku perpus secara praktis -->
+              </h1>
+              <p class="">
+                <!-- Sekarang tidak perlu antri dan ribet untuk meminjam buku perpus,
+                tinggal sat set sat set selesai. -->
+              </p>
+
+              <div class="">
+                <a href="" class=""></a>
+              </div>
+            </div>
+            <!-- Content Left End -->
+
+            <!-- Content Right Start -->
+            <div class="">
+              <div class="">
+                <!-- Card 1 Start -->
+                <div class="">
+                  <div class="">
+                    <div class="">
+                      <img src="" alt="" />
+                    </div>
+
+                    <!-- Title Start -->
+                    <h3 class="">
+                      <!-- Berbagai banyak macam buku. -->
+                    </h3>
+                    <p class="">
+                      <!-- Banyak sekali buku buku menarik yang bisa kamu pinjam
+                      diperpus. -->
+                    </p>
+                    <!-- Title End -->
+                  </div>
+                </div>
+                <!-- Card 1 End -->
+              </div>
+            </div>
+            <!-- Content Right End -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Tentang Kami Section End -->
+
+    <!-- FAQ Section Start -->
+    <section id="faq" class="">
+      <div class="">
+        <div class="">
+          <!-- Header Start -->
+          <div class="">
+            <h3 class=""></h3>
+            <p class=""></p>
+          </div>
+          <!-- Header End -->
+
+          <!-- Content FAQ Start -->
+          <!-- component -->
+          <!-- <div
+            class="max-w-screen-xl mx-auto px-5 bg-white min-h-sceen space-y-3"
+          > -->
+          <!-- Content 1 Start -->
+          <!-- <div
+              class="lg:w-[80%] py-2 md:py-4 px-6 border border-slate-400 rounded-3xl mx-auto"
+            >
+              <details class="group">
+                <summary
+                  class="flex justify-between items-center font-medium cursor-pointer list-none"
+                >
+                  <span class="text-sm md:text-lg">
+                    Bagaimana cara meminjam buku disini?</span
+                  >
+                  <span class="transition group-open:rotate-180">
+                    <svg
+                      fill="none"
+                      height="24"
+                      shape-rendering="geometricPrecision"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="1.5"
+                      viewBox="0 0 24 24"
+                      width="24"
+                    >
+                      <path d="M6 9l6 6 6-6"></path>
+                    </svg>
+                  </span>
+                </summary>
+                <p
+                  class="text-neutral-600 mt-3 text-sm group-open:animate-fadeIn transition-all duration-500"
+                >
+                  SAAS platform is a cloud-based software service that allows
+                  users to access and use a variety of tools and functionality.
+                </p>
+              </details>
+            </div> -->
+          <!-- Content 1 End -->
+          <!-- </div> -->
+          <!-- Content FAQ End -->
+        </div>
+      </div>
+    </section>
+    <!-- FAQ Section End -->
+
+    <!-- Footer Section Start -->
+    <footer class="">
+      <div class="">
+        <div class="">
+          <div class="">
+            <!-- Footer Left Start -->
+            <div class="">
+              <h1 class=""></h1>
+              <p class="">
+                <!-- PerpusJP1 adalah aplikasi perpustakaan online yang beroprasi
+                untuk meminjam buku perpustakaan secara online melalui website
+                agar dapat memudahkan para siswa untuk meminjam buku. -->
+              </p>
+            </div>
+            <!-- Footer Left End -->
+
+            <!-- Footer Right Start -->
+            <div class="">
+              <div class="">
+                <!-- Content 1 Start -->
+                <div class="">
+                  <h3 class=""></h3>
+                  <ul class="">
+                    <li class=""></li>
+                    <li class=""></li>
+                    <li class=""></li>
+                    <li class=""></li>
+                  </ul>
+                </div>
+                <!-- Content 1 End -->
+
+                <!-- Content 2 Start -->
+                <div class="">
+                  <h3 class=""></h3>
+                  <ul class="">
+                    <li class=""></li>
+                    <li class=""></li>
+                    <li class=""></li>
+                  </ul>
+                </div>
+                <!-- Content 2 End -->
+
+                <!-- Content 3 Start -->
+                <div class="">
+                  <h3 class=""></h3>
+                  <ul class="">
+                    <li class=""></li>
+                    <li class=""></li>
+                    <li class=""></li>
+                  </ul>
+                </div>
+                <!-- Content 3 End -->
+
+                <!-- Content 4 Start -->
+                <div class="">
+                  <h3 class=""></h3>
+                  <ul class="">
+                    <li class="">
+                      <i class=""></i>
+                    </li>
+                  </ul>
+                </div>
+                <!-- Content 4 End -->
+              </div>
+            </div>
+            <!-- Footer Right End -->
+          </div>
+
+          <!-- Horizontal Start -->
+          <div class=""></div>
+          <!-- Horizontal End -->
+
+          <!-- Copyright Start -->
+          <div class="">
+            <div class="">
+              <p class=""></p>
+              <p class=""></p>
+            </div>
+          </div>
+          <!-- Copyright End -->
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Scripts JS Start -->
+    <script>
+      // Navbar Fixed
+      const menu = document.getElementById("menu");
+      const faBars = document.querySelector(".fa-bars");
+      const navMobile = document.getElementById("navMobile");
+
+      menu.addEventListener("click", function (e) {
+        faBars.classList.toggle("fa-x");
+        navMobile.classList.toggle("hidden");
+      });
+    </script>
+    <!-- Scripts JS End -->
+  </body>
+</html>
